@@ -45,7 +45,7 @@ const rand = ( min, max ) =>
 - https://github.com/dym-sh/rand
 - https://gitlab.com/dym-sh/rand
 - https://dym.sh/rand
-- hyper:// /[?](https://beakerbrowser.com)
+- hyper://f4c774bae85cb1490994ec31b59d32eeaaf644cbaf2136185751ee8353476e6b /[?](https://beakerbrowser.com)
 
 
 ## license
