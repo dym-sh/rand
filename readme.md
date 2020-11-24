@@ -1,19 +1,51 @@
 # rand
 
-> <DESCRIPTION>
+> simple wrapper for `Math.random()`
 
 
-<a href='./preview.png'><img height=100 border=2 align='right' alt='preview' src='preview.png'></a>
-## preview
-- [preview.html](./preview.html)
-- https://codepen.io/dym-sh/pen/<TBD>/left/?editors=0100
+## declare
+``` html
+<script type='module' src='vendor/rand/mod.js'></script>
+```
+
+and
+``` js
+import { rand } from 'vendor/rand/mod.js'
+```
+
+## use
+
+### rand( max )
+
+> random number from `0` to `max`
+
+``` js
+const F = rand( 2 * Math.PI )
+```
+
+### rand( min, max )
+
+> random number from `min` to `max`
+
+``` js
+const age = rand( 21, 121 )
+```
+
+
+## source code
+``` js
+const rand = ( min, max ) =>
+  ( undefined == max )
+  ? ( Math.random() * min )
+  : ( Math.random() * (max - min) + min )
+```
 
 
 ## mirrors
 - https://github.com/dym-sh/rand
 - https://gitlab.com/dym-sh/rand
 - https://dym.sh/rand
-- hyper://<TBD> /[?](https://beakerbrowser.com)
+- hyper:// /[?](https://beakerbrowser.com)
 
 
 ## license
